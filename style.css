@@ -195,9 +195,20 @@ h1 {
 .pizzaInfo--size:hover {
     background-color:#CCC;
 }
+@keyframes muda{
+    0% {
+        background-color:#EEE;
+    }
+    100% {
+        background-color:#399ade;
+    }
+}
 .pizzaInfo--size.selected {
-    background-color:#399ade;
+    animation-name: muda;
+    animation-duration: 1s;
     color:#FFF;
+    background-color:#399ade;
+    
 }
 .pizzaInfo--size.selected span {
     color:#D6D6D6;
